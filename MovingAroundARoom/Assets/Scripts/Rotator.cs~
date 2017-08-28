@@ -1,0 +1,12 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Rotator : MonoBehaviour 
+{
+    // not using forces so update is better than fixed update
+	void Update () 
+    {
+		transform.Rotate(new Vector3(0, 0, 45) * Time.deltaTime);
+	}
+}
